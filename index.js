@@ -1,7 +1,7 @@
 async function getPhotos(){
     let photosData = await fetch('https://jsonplaceholder.typicode.com/photos')
     let content = await photosData.json()
-    let numberOfPhotos = 12
+    let numberOfPhotos = 16
     content = content.splice(0, numberOfPhotos)
     
     let list = document.querySelector('.row')
